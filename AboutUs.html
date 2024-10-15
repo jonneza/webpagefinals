@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <style>
+       
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image:url('logo4.png');
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        header {
+            margin-top: 20px;
+            text-align: center;
+        }
+        header h1 {
+            font-size: 2.5rem;
+            color: black;
+        }
+        main {
+            flex-grow: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+        }
+        .container {
+            display: flex;
+            gap: 20px;
+            margin: 20px;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .card {
+            width: 250px;
+            height: 340px;
+            border-radius: 20px;
+            display: flex;
+            align-items: flex-end;
+            position: relative;
+            transition: transform 0.5s ease;
+            overflow: hidden;
+            background: #fff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            cursor: pointer;
+        }
+        .card:hover {
+            transform: scale(1.05);
+        }
+        .background {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 20px;
+        }
+        .card-content {
+            position: relative;
+            z-index: 1;
+            width: 100%;
+            padding: 10px;
+            text-align: center;
+            background: rgba(0, 0, 0, 0.7);
+            border-radius: 0 0 20px 20px;
+            color: #fff;
+        }
+        .title {
+            margin: 0;
+            font-size: 1.2rem;
+            transition: opacity 0.5s ease, transform 0.5s ease;
+        }
+        .card:hover .title {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        .card-content p {
+            margin: 5px 0;
+            padding: 0;
+            font-size: 1rem;
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.5s ease, transform 0.5s ease;
+        }
+        .card:hover .card-content p {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        footer {
+            text-align: center;
+            margin-bottom: 10px;
+            color: #666;
+        }
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+                align-items: center;
+            }
+            .card {
+                width: 80%;
+                max-width: 400px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1 style="color:white;"<b> "Learn Globally"</b></h1>
+    </header>
+
+    <main>
+        <div class="container">
+            <div class="card">
+                <img class="background" src="C:\Users\Acer\Downloads/jonneza.jpg" alt="Portrait of Jonneza Gacayan"> 
+                <div class="card-content">
+                    <h3 class="title">Jonneza Gacayan</h3>
+                    <p>Generate the Home</p>					
+                    <p>Student of Asscat</p>
+					
+                </div>
+            </div>
+
+            <div class="card">
+                <img class="background" src="C:\Users\Acer\Downloads/criss.jpg" alt="Portrai of Cristine Suaybaguio ">
+                <div class="card-content">
+                    <h3 class="title">Cristine Suaybaguio</h3>
+                    <p>Generate the Books</p>					
+                    <p>Student of Asscat</p>
+					
+                </div>
+            </div>
+
+            <div class="card">
+                <img class="background" src="C:\Users\Acer\Downloads/wen.jpg" alt="Portrait Wennie Rose Sanillano">
+                <div class="card-content">
+                    <h3 class="title">Wennie Rose Samillano</h3>
+                    <p>Generate the Messages</p>
+                    <p>Student of Asscat</p>
+					
+                </div>
+            </div>
+
+            <div class="card">
+                <img class="background" src="/other file pics/shella.jpg" alt="Portrait of Shella Mae Morados">
+                <div class="card-content">
+                    <h3 class="title">Ariane May Duarte</h3>
+                    <p>Generate the Account</p>
+                    <p>Student of Asscat</p>
+					
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        &copy; 2024 WebPage. All rights reserved.
+    </footer>
+</body>
+</html>
